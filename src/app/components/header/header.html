@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="drawerService.toggleDrawer()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  {{ title() }}
+  <span class="spacer" ></span>
+
+  @if (userService.IS_LOGGED_IN() ) {
+    <button mat-icon-button>
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  }@else {
+    <button matButton="filled" (click)="openLoginDialog()">Login</button>
+  }
+
+  <button mat-icon-button>
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+</mat-toolbar>
