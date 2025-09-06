@@ -1,6 +1,6 @@
 <mat-toolbar>
   <button mat-icon-button (click)="drawerService.toggleDrawer()">
-    <mat-icon>menu</mat-icon>
+    <mat-icon>{{ drawerService.IS_DRAWER_OPENED() ? 'menu_open' : 'menu' }}</mat-icon>
   </button>
   {{ title() }}
   <span class="spacer" ></span>
