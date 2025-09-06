@@ -5,7 +5,7 @@ import { Injectable, signal } from "@angular/core";
 })
 export class DrawerService{
 
-  private _drawerOpened = signal(false);
+  private _drawerOpened = signal(true);
     IS_DRAWER_OPENED = this._drawerOpened.asReadonly();
 
     openDrawer(){
