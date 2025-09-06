@@ -8,10 +8,12 @@
   margin: 32px;
 }
 
-.example-full-width {
+.full-width {
   width: 100%;
 }
+
 .login-controls{
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
