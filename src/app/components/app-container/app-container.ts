@@ -1,11 +1,12 @@
 import { Component, inject, computed } from '@angular/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { DrawerService } from '../../services/drawer';
+import { Filters } from '../filters/filters';
 
 
 @Component({
   selector: 'app-container',
-  imports: [MatSidenavModule],
+  imports: [MatSidenavModule, Filters],
   templateUrl: './app-container.html',
   styleUrl: './app-container.scss'
 })

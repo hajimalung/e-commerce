@@ -1,0 +1,7 @@
+<mat-selection-list class="selection-list">
+  @for(listOption of list(); track listOption.id){
+    <mat-list-option>
+      {{listOption.displayName}}
+    </mat-list-option>
+  }
+</mat-selection-list>

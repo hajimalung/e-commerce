@@ -1,0 +1,22 @@
+
+@use '@angular/material' as mat;
+
+:host{
+  @include mat.list-overrides((
+    list-item-label-text-color: var(--mat-sys-on-tertiary),
+    list-item-hover-label-text-color: var(--mat-sys-on-secondary),
+    list-item-focus-label-text-color: var(--mat-sys-on-secondary),
+  ));
+  @include mat.checkbox-overrides((
+    unselected-icon-color: var(--mat-sys-on-tertiary),
+    unselected-hover-icon-color: var(--mat-sys-on-tertiary),
+
+    selected-icon-color: var(--mat-sys-on-tertiary),
+    selected-checkmark-color: var(--mat-sys-primary),
+    selected-hover-icon-color: var(--mat-sys-primary-container),
+  ));
+}
+
+.selection-list{
+  margin: 16px;
+}
